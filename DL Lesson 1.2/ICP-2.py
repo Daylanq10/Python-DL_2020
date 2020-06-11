@@ -68,10 +68,11 @@ def file_word_counter(filename: str) -> dict:
 
     file.close()
 
+    return words_dict
 
 if __name__ == "__main__":
     print(lbs_to_klg())  # PROBLEM 1
     print()
     print(string_alternative('good evening'))   # PROBLEM 2
-
-    file_word_counter('test.txt')    # PROBLEM 3
+    print()
+    print(file_word_counter('test.txt'))    # PROBLEM 3
