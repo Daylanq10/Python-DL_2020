@@ -16,6 +16,7 @@ def lbs_to_klg() -> list:
         new = item * 0.453592
         new = round(new, 2)
         convert.append(new)
+        convert.sort()
 
     return convert
 
@@ -70,9 +71,10 @@ def file_word_counter(filename: str) -> dict:
 
     return words_dict
 
+
 if __name__ == "__main__":
     print(lbs_to_klg())  # PROBLEM 1
     print()
-    print(string_alternative('good evening'))   # PROBLEM 2
+    print(string_alternative('good evening'))  # PROBLEM 2
     print()
-    print(file_word_counter('test.txt'))    # PROBLEM 3
+    print(file_word_counter('test.txt'))  # PROBLEM 3
