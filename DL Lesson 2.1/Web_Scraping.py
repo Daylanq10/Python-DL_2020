@@ -16,7 +16,7 @@ for item in soup.find_all("a", href=True):
     links.append(item.get('href'))
 
 # OUTPUT LIST CONTENTS INTO A TEXT FILE
-f_out = open("output.txt", "a+")
+f_out = open("../../Desktop/Python-DL_2020/DL Lesson 2.1/output.txt", "a+")
 for item in links:
     f_out.write(str(item))
     f_out.write('\n')
