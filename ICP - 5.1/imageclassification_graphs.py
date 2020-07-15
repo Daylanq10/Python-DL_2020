@@ -66,7 +66,7 @@ plt.legend(['train', 'test'], loc='upper left')
 plt.show()
 
 # get prediction of selected image data
-img = test_images[100]  # get image at location
+img = test_images[400]  # get image at location
 test_img = img.reshape((1, 784))  # reshape to fit
 img_class = model.predict_classes(test_img)  # predicted data from selected image
 prediction = img_class[0]
